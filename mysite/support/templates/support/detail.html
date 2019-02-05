@@ -1,0 +1,31 @@
+{% extends "support/base.html" %}
+
+{% block content %}
+<h2>Ticket Details</h2>
+
+<div style="overflow-x:auto;">
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Vendor</th>
+        <th>Category</th>
+        <th>Severity</th>
+        <th>Description</th>
+        <th>Created</th>
+        <th>Expiry</th>
+        <th>Status</th>
+
+    </tr>
+    <tr>
+        <td>{{ ticket.id }}</a></td>
+        <td>{{ ticket.vendor }}</td>
+        <td>{{ ticket.category }}</td>
+        <td>{{ ticket.get_severity_display }}</td>
+        <td>{{ ticket.description }}</td>
+        <td>{{ ticket.created_at }}</td>
+        <td>{{ ticket.expiry }}</td>
+        <td>{{ ticket.status }}</td>
+    </tr>
+</table>
+</div>
+{% endblock %}
