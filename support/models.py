@@ -1,4 +1,6 @@
+import pytz
 from datetime import date, time, datetime, timedelta
+
 from django.core.exceptions import ValidationError
 from django.db import models
 
@@ -122,7 +124,7 @@ def findExpiryDate(sla):
 
     tomorrow = date.today() + timedelta(days=flag)
     shiftTime = time(START_HOUR,0,0)
-    dt = datetime.combine(tomorrow, shiftTime)
+    dt = datetime.combine(tomorrow, shiftTime, pytz.utc)
     dt = adjust_Weekends_And_Holidays(dt) # adjust incase we hit a weekend
 
 
