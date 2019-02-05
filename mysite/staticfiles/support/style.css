@@ -1,0 +1,98 @@
+h1 {
+    font: 30px Consolas, sans-serif;
+    text-align: center;
+}
+
+h2,
+label {
+    font: 20px Consolas, sans-serif;
+    text-align: center;
+}
+
+p {
+    font: 15px Consolas, sans-serif;
+    text-align: center;
+}
+
+
+
+input[type=number] {
+    width: auto;
+    font: 18px/30px Consolas, serif;
+    padding: 5px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=number]:focus {
+    border-color: #333;
+}
+
+input[type=text] {
+    width: 600px;
+    height: 100px;
+    font: 18px/30px Consolas, serif;
+    padding: 3px;
+    border: 2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color: #333;
+}
+
+input[type=submit] {
+    background-color: #d24f5a;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    font: 18px/30px Consolas, serif;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+select {
+    width: 200;
+    font: 20px/60px Consolas, serif;
+    border: 2px solid #ccc;
+}
+
+
+
+table {
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: auto;
+
+}
+
+tr,
+th,
+td {
+
+    font: 18px/30px Consolas, serif;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #d24f5a;
+}
+
+th {
+    background-color: #d96a73;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5d6d9;
+}
+
+.registerform {
+    width: auto;
+    text-align: center;
+}
