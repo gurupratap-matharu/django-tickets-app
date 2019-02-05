@@ -135,6 +135,7 @@ STATIC_URL = '/static/'
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
+    os.path.join(PROJECT_ROOT, 'support', 'static', 'support')
 )
 
 # Simplified static file serving.
@@ -142,5 +143,5 @@ STATICFILES_DIRS = (
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
-# Activate Django-Heroku
+# Activate Django-Heroku    
 django_heroku.settings(locals())
