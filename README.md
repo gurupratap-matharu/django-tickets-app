@@ -1,6 +1,6 @@
 # Ticket Register
 
-A django projects that registers support based on 
+A django projects that registers tickets for support based on 
 
 * Category
 * Severity
@@ -30,7 +30,7 @@ This code is open source. So feel free to use, modify, share, download as per yo
 
 ## How to run?
 
-This code is written in python3.6.
+This code is written in python3.7
 
 ## On local machine
 
