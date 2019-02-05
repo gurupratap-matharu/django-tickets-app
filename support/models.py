@@ -144,12 +144,7 @@ def isWeekend(dt):
 
 def isHoliday(dt):
     """Finds if a date lies on a holiday or not. Returns a boolean"""
-    holidays = Holiday.objects.values_list('day', flat=True)
-
-    if dt.date() in holidays:
-        return True
-    else:
-        return False
+    return Holiday.objects.filter(day=dt.date()).exists()
 
 def adjust_Weekends_And_Holidays(dt, days=0):
     """
