@@ -1,11 +1,11 @@
 # Ticket Register
 
-A django projects that registers tickets for support based on 
+A web application that registers tickets for support based on
 
 * Category
 * Severity
 * Creation Date
-* Expiry Date (calculating this is the most trickiest part of the app)
+* Expiry Date
 * Vendor
 * Status
 
@@ -26,19 +26,12 @@ The interface itself permits
 
 ## License
 
-This code is open source. So feel free to use, modify, share, download as per your need. I do not take risk nor responsibility for your errors or any commercial damage.
+MIT License
 
-## How to run?
-
-This code is written in python3.7
-
-## On local machine
+## How to run
 
 Go to the mysite project folder that contains the manage.py file and then
+
 ```
 python manage.py runserver
 ```
-
-Else directly access the webapp on this link
-
-http://gurupratap.pythonanywhere.com/support/
